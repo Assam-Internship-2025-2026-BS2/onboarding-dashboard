@@ -1,0 +1,183 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Inter, Arial, sans-serif;
+  background: #f1f5f9;
+}
+
+/* =========================
+   MAIN CARD CONTAINER
+========================= */
+
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font-size: 15px;
+  color: #64748b;
+}
+
+.badge {
+  background: #fdeedc;
+  color: #d97706;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+/* =========================
+   TABLE WRAPPER (OUTER BOX)
+========================= */
+
+.table-wrapper {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+/* =========================
+   TABLE STRUCTURE
+========================= */
+
+.matrix-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.matrix-table th,
+.matrix-table td {
+  padding: 18px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Header row */
+.matrix-table th {
+  background: #f9fafb;
+  font-weight: 700;
+  font-size: 15px;
+  color: #111827;
+}
+
+/* Stage column */
+.matrix-table th:first-child,
+.matrix-table td:first-child {
+  text-align: left;
+  width: 220px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+/* =========================
+   CELL BOX (PERCENTAGE)
+========================= */
+
+.cell-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;   /* smaller radius */
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.cell-box:hover {
+  transform: scale(1.05);
+}
+
+/* =========================
+   COLOR STATES
+========================= */
+
+.healthy {
+  background: #e6f4ea;
+  color: #15803d;
+}
+
+.watch {
+  background: #fff4e5;
+  color: #d97706;
+}
+
+.critical {
+  background: #fdecea;
+  color: #dc2626;
+}
+
+.severe {
+  background: #f8d7da;
+  color: #991b1b;
+}
+
+/* =========================
+   LEGEND
+========================= */
+
+.legend {
+  margin-top: 35px;
+  display: flex;
+  gap: 30px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.green-box,
+.amber-box,
+.red-box,
+.darkred-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+}
+
+.green-box { background: #15803d; }
+.amber-box { background: #d97706; }
+.red-box { background: #dc2626; }
+.darkred-box { background: #991b1b; }
+.matrix-table th:first-child,
+.matrix-table td:first-child {
+  width: 200px;
+}

@@ -1,0 +1,157 @@
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+}
+
+/* Dashboard layout */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 32% 68%;
+  gap: 24px;
+  padding: 30px;
+}
+
+/* Insights container */
+.insights-container {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+}
+
+/* Header */
+.insights-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.insights-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.critical-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.critical-badge {
+  background: #fde2e2;
+  color: #b91c1c;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* Card layout */
+.insight-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.insight-card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 18px;
+  border-left: 6px solid transparent;
+  transition: 0.2s ease;
+}
+
+.insight-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+}
+
+/* Severity colors */
+.insight-critical {
+  border-left-color: #ef4444;
+  background: #fff1f2;
+}
+
+.insight-warning {
+  border-left-color: #f59e0b;
+  background: #fff7ed;
+}
+
+.insight-info {
+  border-left-color: #3b82f6;
+  background: #eff6ff;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+}
+
+/* Left content */
+.product-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.metric-value {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Impact pill */
+.impact-pill {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: 1px solid #e5e7eb;
+}
+
+/* Description */
+.description {
+  margin: 14px 0;
+  font-size: 14px;
+  color: #444;
+}
+
+/* CTA */
+.cta-link {
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Extra Info */
+.extra-info {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* Severity pill colors */
+
+.impact-critical {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.impact-warning {
+  background: #ffedd5;
+  color: #c2410c;
+  border: 1px solid #fdba74;
+}
+
+.impact-info {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #93c5fd;
+}
