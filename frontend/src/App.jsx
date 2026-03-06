@@ -11,6 +11,7 @@ import Analysis from "./pages/Analysis";
 
 import StageDropMatrix from "./StageDropMatrix";
 import JourneyDetails from "./JourneyDetails";
+import InsightCall from "./InsightCall";
 
 import "./styles/theme.css";
 
@@ -29,7 +30,7 @@ function App() {
 
               {/* Existing stage drop feature */}
               <Route path="/stagedrop" element={<StageDropMatrix />} />
-              <Route path="/journeys" element={<JourneyDetails />} />
+               <Route path="/journeys" element={<InsightCall />} />
             </Routes>
           </main>
         </BrowserRouter>
